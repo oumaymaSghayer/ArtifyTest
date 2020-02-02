@@ -1,0 +1,130 @@
+<!----Sghayer Omayma-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+    margin:0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.row {
+  display: -webkit-flex;
+  display: flex;
+}
+
+
+.column {
+  padding: 10px;
+  text-align: center;
+  height: 700px; 
+}
+
+
+.column.side {
+    align-content: space-between;
+   -webkit-flex: 1;
+   -ms-flex: 1;
+   flex: 1;
+   flex-wrap: wrap;
+   position: relative;
+}
+
+
+.column.middle {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  display: flexbox;
+  flex-direction: column;
+
+
+}
+.column.middle > .elt {
+  width: 90%;
+  margin: 10px;
+  line-height: 75px;
+  font-size: 30px;
+  display: flex; 
+  flex-direction: row;
+  align-content: stretch;
+}
+.elt > .circle {
+  background-color:grey;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  border-radius: 50%;
+}
+.elt > .element {
+  background-color:grey;
+  width: 75%;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+left:0px;
+}
+
+
+@media (max-width: 600px) {
+  .row {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+.sauvegarder{
+    background-color:palevioletred;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    display:block;
+}
+</style>
+</head>
+<body>
+
+
+<div class="row">
+  <div class="column side" style="background-color:#aaa;">
+    <img src="img1.png">
+    <h2>Nom Prénom</h2>
+    <p>Age <br> Compétences</p>
+    <div class="sauvegarder">
+        <p>Sauvegarder</p>
+    </div>
+</div>
+  <div class="column middle" style="background-color:#bbb;">
+        <h2>Je suis un titre</h2>
+        <h4>Je suis le sous titre</h4>
+        <div class="elt"> <div class="circle">1</div>
+                           
+        <div class="element"> element 1</div> </div>
+        <div class="elt"> <div class="circle">2</div><div class="element">element 2 </div> </div>
+        <div class="elt"> <div class="circle">3</div><div class="element">element 3</div> </div>
+        <div class="elt"> <div class="circle">4</div><div class="element">element 4</div> </div>
+        
+        
+  </div>
+ 
+</div>
+
+
+</body>
+</html>

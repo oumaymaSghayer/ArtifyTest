@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <style>
+            
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin:0px;
+                font-family: Arial, Helvetica, sans-serif;
+                
+            }
+            .flex-container {
+                background-color: black;
+                display: flex;
+                flex-direction: row;
+                height : 100%;
+                align-items:flex-end  ;
+                
+            }
+
+            .flex-container > .whitetiles{
+                background-color: #f1f1f1;
+                width: 100px;
+                margin: 2px;
+                height: 60%;       
+                line-height: 75px;
+                font-size: 30px;
+                
+            }
+            .flex-container > .blacktilesholder{
+                background-color:transparent;
+                flex-direction: row;
+                display: flex;
+                margin : 2px;
+                height : 50%;
+                line-height: 75px;
+                font-size: 30px;
+                position :absolute;
+                width:100%;
+               
+                justify-content: center;
+
+                
+               
+            }
+            .blacktilesholder > .blacktiles{
+                background-color: black;
+                height:100%;
+                width : 50px;
+                margin: 20px;
+               
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex-container">
+            <div class="whitetiles"></div>
+            <div class="blacktilesholder">
+                <div class="blacktiles">1</div>
+                <div class="blacktiles">1</div>
+                <div class="blacktiles">1</div>
+                <div class="blacktiles">1</div>
+                <div class="blacktiles">1</div>
+                <div class="blacktiles">1</div>
+
+                <div class="blacktiles">1</div>
+                <div class="blacktiles">1</div>
+                <div class="blacktiles">1</div>
+                <div class="blacktiles">1</div>
+                <div class="blacktiles">1</div>
+                <div class="blacktiles">1</div>
+
+                <div class="blacktiles">1</div>
+                <div class="blacktiles">1</div>
+                <div class="blacktiles">1</div>
+               
+                
+            </div>
+            <div class="whitetiles"></div>
+            
+            <div class="whitetiles"></div>
+            
+            <div class="whitetiles"></div>
+            <!-- position: absolute;
+                transform: translateX(130%);-->
+            <div class="whitetiles"></div>
+            <div class="whitetiles"></div>
+            <div class="whitetiles"></div>
+            <div class="whitetiles"></div>
+
+            <div class="whitetiles"></div>
+            <div class="whitetiles"></div>
+            <div class="whitetiles"></div>
+            <div class="whitetiles"></div>
+
+            <div class="whitetiles"></div>
+            <div class="whitetiles"></div>
+
+            
+        </div>
+    </body>
+</html>
